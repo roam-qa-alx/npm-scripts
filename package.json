@@ -1,0 +1,30 @@
+{
+  "name": "npm-scripts",
+  "version": "1.0.0",
+  "description": "Examples of different life cycle script commands",
+  "main": "index.js",
+  "scripts": {
+    "install": "echo 'This is install'",
+    "postinstall": "echo 'This is postinstall'",
+    "pretest": "echo 'This is pretest'",
+    "test": "echo 'This is test'",
+    "posttest": "echo 'This is posttest'",
+    "precustom": "echo 'This is precustom'",
+    "custom": "echo 'This is custom'",
+    "postcustom": "echo 'This is postcustom'",
+    "run-it-all": "echo 'This will run all script steps' && (npm install && npm test && npm run custom) | node_modules/.bin/gnomon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roam-qa-alx/npm-scripts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roam-qa-alx/npm-scripts/issues"
+  },
+  "homepage": "https://github.com/roam-qa-alx/npm-scripts#readme",
+  "dependencies": {
+    "gnomon": "^1.5.0"
+  }
+}
